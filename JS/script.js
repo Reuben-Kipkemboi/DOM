@@ -19,6 +19,13 @@
         input.value="";
 
     });
+    ul.addEventListener('click', (e) => {
+        let id = e.target.getAttribute('data-id');
+        if (!id) return; // user clicked in something else
+        // pass id through to functions
+        removeItemFromDOM(id);
+        removeItemFromArray(id);
+      });
 
 
 })
