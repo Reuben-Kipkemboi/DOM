@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,4 +30,41 @@
     
     <script src="JS/script.js"></script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <section class="container">
+      
+        <div class="heading">
+            <img class="heading_img" src="https://images.unsplash.com/photo-1598791318878-10e76d178023?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dG8lMjBkb3xlbnwwfHwwfHx8MA%3D%3D" alt="To do Image">
+        </div>
+        <h1 class="heading_title">My main Goals for Today..</h1>
+      </div>
+      <form class="form">
+        <div>
+          <label for="todo" class="form_label">~ My main Goals for Today ~</label>
+          <input
+            type="text"
+            class="form_input"
+            id="todo"
+            name="to-do"
+            size="30"
+            required
+          />
+          <button class="button"><span>Submit Today's Goal</span></button>
+        </div>
+      </form>
+      <div>
+        <ul class="toDoList"></ul>
+      </div>
+    </section>
+    <script src="JS/script.js"></script>
+  </body>
 </html>
