@@ -25,7 +25,16 @@
         // pass id through to functions
         removeItemFromDOM(id);
         removeItemFromArray(id);
-      });
+    });
+
+    function addItemToArray(itemId, toDoItem) {
+        // add item to array as an object with an ID so we can find and delete it later
+        toDoListArray.push({ itemId, toDoItem });
+        console.log(toDoListArray);
+      }
+    
+
+    
 
 
 })
